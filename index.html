@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset+"UTF-8">
-        <title>My Homepage!</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header, footer {
+                background-color: #333;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+            main {
+                padding: 20px;
+                max-width: 800px;
+                margin: auto;
+                background-color: white;
+            }
+            h1, h2 {
+                font-family: georgia, serif;
+                margin: 0;
+            }
+            footer p {
+                margin: 10px 0 0 0;
+            }
+            footer a img {
+                vertical-align: middle;
+                margin-left: 10px;
+            }
+        </style>
+        <title>Josiah Blanding || Developer</title>
     </head>
     <body>
-        <h1>Welcome to my homepage! </h1>
-        <p>Not much to see here.</p>
-        <p>Do not look at this link. <a href="itis3135/">ITIS 3135</a></p>
+        <header>
+        <h1>Josiah Blanding</h1><h2>|| Developer</h2>
+        <nav>
+            <!--
+            TODO: Add links to other pages in the site
+            <a href="./">Home</a> |
+            <a href="introduction.html">Introduction</a> |
+            <a href="contract.html">Contract</a> |
+            !-->
+        </nav>
+        </header>
+        <main>
+            <h2>About Me</h2>
+            <p>I am an aspiring developer and a student at UNC Charlotte. My life consists of sports, studying,
+                and at the moment... more studying.
+            </p>
+            <p>I'm looking forward to learning more about coding and dive deep into this new world. I hope you enjoy experiencing this adventure with me, through this website.
+            </p>
+        </main>
+        <footer>
+            <nav>
+                <a href="https://webpages.charlotte.edu/jblandin/" target="_blank">Charlotte Webpages</a> |
+                <a href="https://github.com/jblandin-art" target="_blank">Github</a> |
+                <a href="https://jblandin-art.github.io/" target="_blank">Github.io</a> |
+                <a href="https://www.freecodecamp.org/pubstomperinrome" target="_blank">freeCodeCamp</a> |
+                <a href="https://www.codecademy.com/profiles/pubstomperinrome" target="_blank">Codecademy</a> |
+                <a href="https://www.linkedin.com/in/josiah-blanding-26190b37b/" target="_blank">LinkedIn</a> |
+            </nav>
+            <p>© 2025 Josiah Blanding </p>
+            <a id="validation-button-html">
+                <img src ="https://www.w3.org/Icons/valid-html401" alt="html validation-button">
+            </a>
+            <a id="validation-button-css">
+                <img src ="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="css validation-button">
+            </a>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
     </body>
-</html>
+    </html>
