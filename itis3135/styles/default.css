@@ -1,9 +1,10 @@
        body {
            font-family: Garamond, sans-serif;
-           color: darkslategray;
+           color: #010101;
+           /*directions say no black or white so I go as close as possible*/
            margin: 0;
            padding: 0;
-           background-color: lightgrey;
+           background-color: #FEFEFE;
        }
 
        header,
