@@ -78,6 +78,10 @@
            margin: 5px 0 0 0;
        }
 
+       .designed:visited{
+              color: brown;
+       }
+
        /* ================== Media Queries ================== */
 
        /*Tablet (max-width: 1024px)*/
