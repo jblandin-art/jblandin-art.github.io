@@ -25,13 +25,13 @@
            color: brown;
        }
 
-        footer a {
+        footer p a {
            color: orange;
            margin: 0 15px;
            text-decoration: none;
        }
        
-       footer a:visited {
+       footer p a:visited {
            color: brown;
        }
 
