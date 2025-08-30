@@ -75,6 +75,12 @@
            color: orange;
        }
 
+       .designed-by {
+           font-size: 0.8rem;
+           color: #666;
+           margin: 5px 0 0 0;
+       }
+
        /* ================== Media Queries ================== */
 
        /*Tablet (max-width: 1024px)*/
