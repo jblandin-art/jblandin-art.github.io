@@ -1,38 +1,146 @@
        body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: white;
-            }
-            header, footer {
-                background-color: #EEE0CB;
-                color: #BAA898;
-                padding: 10px 0;
-                text-align: center;
-            }
-            nav a {
-                color: white;
-                margin: 0 15px;
-                text-decoration: none;
-            }
-            main {
-                max-width: 800px;
-                width: 90%;
-                margin: auto;
-                background-color: white;
-            }
-            h1 {
-                font-family: georgia, serif;
-                margin: 0;
-            }
-            h2 {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                margin: 0;
-            }
-            footer p {
-                margin: 10px 0 0 0;
-            }
-            footer a img {
-                vertical-align: middle;
-                margin-left: 10px;
-            }
+           font-family: Garamond, sans-serif;
+           color: darkslategray;
+           margin: 0;
+           padding: 0;
+           background-color: white;
+       }
+
+       header,
+       footer {
+           background-color: #EEE0CB;
+           color: #BAA898;
+           padding: 10px 0;
+           text-align: center;
+       }
+
+       nav a {
+           color: lightgray;
+           margin: 0 15px;
+           text-decoration: none;
+       }
+
+       .secondary-nav {
+           font-size: 0.85rem;
+           color: #999;
+           /*mute color*/
+           margin-top: 5px;
+           /*slight spacing*/
+           text-align: center;
+       }
+
+       .secondary-nav a {
+           color: #777;
+           text-decoration: none;
+           margin: 0 10px;
+           font-style: italic;
+       }
+
+       .secondary-nav a:hover {
+           text-decoration: underline;
+           color: #555;
+       }
+
+       main {
+           max-width: 800px;
+           width: 90%;
+           margin: auto;
+           background-color: lightgray;
+       }
+
+       h1 {
+           font-family: georgia, serif;
+           margin: 0;
+       }
+
+       h2 {
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           margin: 0;
+       }
+
+       footer p {
+           margin: 10px 0 0 0;
+       }
+
+       footer a img {
+           vertical-align: middle;
+           margin-left: 10px;
+       }
+
+       a {
+           color: brown;
+       }
+
+       a:visited {
+           color: orange;
+       }
+
+       /* ================== Media Queries ================== */
+
+       /*Tablet (max-width: 1024px)*/
+       @media (max-width: 1024px) {
+
+           header,
+           footer {
+               padding: 15px;
+           }
+
+           nav a {
+               display: inline-block;
+               margin: 10px;
+           }
+
+           main {
+               width: 95%;
+           }
+
+           h1 {
+               font-size: 1.8rem;
+           }
+
+           h2 {
+               font-size: 1.4rem;
+           }
+       }
+
+
+       /*Phone (max-width: 768px)*/
+       @media (max-width: 768px) {
+
+           header,
+           footer {
+               padding: 20px 10px;
+           }
+
+           nav {
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+           }
+
+           nav a {
+               margin: 5px 0;
+           }
+
+           main {
+               width: 100%;
+               padding: 0 10px;
+           }
+
+           h1 {
+               font-size: 1.5rem;
+           }
+
+           h2 {
+               font-size: 1.2rem;
+           }
+
+           footer a img {
+               display: block;
+               margin: 10px auto 0 auto;
+           }
+
+           footer p {
+               font-size: 0.9rem;
+           }
+       }
