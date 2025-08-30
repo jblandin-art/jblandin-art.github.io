@@ -15,9 +15,13 @@
        }
 
        nav a {
-           color: lightgray;
+           color: brown;
            margin: 0 15px;
            text-decoration: none;
+       }
+
+       nav a:visited {
+           color: orange;
        }
 
        .secondary-nav {
@@ -65,14 +69,6 @@
        footer a img {
            vertical-align: middle;
            margin-left: 10px;
-       }
-
-       a {
-           color: brown;
-       }
-
-       a:visited {
-           color: orange;
        }
 
        .designed-by {
