@@ -27,7 +27,6 @@
 
         footer p a {
            color: orange;
-           margin: 0 15px;
            text-decoration: none;
        }
        
@@ -86,6 +85,14 @@
            font-size: 0.8rem;
            color: #666;
            margin: 5px 0 0 0;
+       }
+
+       img {
+           max-width: 40%;
+           height: auto;
+       }
+       .bold{
+              font-weight: bold;
        }
 
 
