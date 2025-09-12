@@ -5,7 +5,130 @@
         <title>ITIS3135 | Josiah Blanding's | Jagged Bat | Home</title>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <script src="scripts/validation-links.js"></script>
-        <link rel="stylesheet" href="styles/default.css">
+        <style>
+                   body {
+           font-family: Garamond, sans-serif;
+           color: #010101;
+           /*directions say no black or white so I go as close as possible*/
+           margin: 0;
+           padding: 0;
+           background-color: #FEFEFE;
+       }
+       /* colors (Carolina Blue, 86bbd8, Christler Blue, 5603ad,
+       Raisin Black, 1a181b, Dutch White, dbd8b3 Fairy Pink, efbcd5 */
+       header,
+       footer {
+           background-color: #86bbd8;
+           color: #5603ad;
+           padding: 10px 0;
+           text-align: center;
+       }
+
+       main {
+           max-width: 800px;
+           width: 90%;
+           margin: auto;
+           background-color: #e9e9e9;
+       }
+
+       h1 {
+           font-family: georgia, serif;
+           margin: 0;
+       }
+
+       h2 {
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           margin: 0;
+       }
+
+       footer p {
+           margin: 10px 0 0 0;
+       }
+
+       footer a img {
+           vertical-align: middle;
+           margin-left: 10px;
+       }
+
+       img {
+           max-width: 40%;
+           height: auto;
+       }
+       .bold{
+              font-weight: bold;
+       }
+
+
+       /* ================== Media Queries ================== */
+
+       /*Tablet (max-width: 1024px)*/
+       @media (max-width: 1024px) {
+
+           header,
+           footer {
+               padding: 15px;
+           }
+
+           nav a {
+               display: inline-block;
+               margin: 10px;
+           }
+
+           main {
+               width: 95%;
+           }
+
+           h1 {
+               font-size: 1.8rem;
+           }
+
+           h2 {
+               font-size: 1.4rem;
+           }
+       }
+
+
+       /*Phone (max-width: 768px)*/
+       @media (max-width: 768px) {
+
+           header,
+           footer {
+               padding: 20px 10px;
+           }
+
+           nav {
+               display: flex;
+               flex-direction: column;
+               gap: 10px;
+           }
+
+           nav a {
+               margin: 5px 0;
+           }
+
+           main {
+               width: 100%;
+               padding: 0 10px;
+           }
+
+           h1 {
+               font-size: 1.5rem;
+           }
+
+           h2 {
+               font-size: 1.2rem;
+           }
+
+           footer a img {
+               display: block;
+               margin: 10px auto 0 auto;
+           }
+
+           footer p {
+               font-size: 0.9rem;
+           }
+       }
+        </style>
     </head>
     <body>
         <header>
