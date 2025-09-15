@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>designedbyjosiah || Digital Styling Services</title>
+        <title>Jagged Bat || Home</title>
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <style>
                    body {
@@ -13,17 +13,20 @@
            background-color: #FEFEFE;
        }
        /* colors 
-       https://coolors.co/86bbd8-5603ad-1a181b-dbd8b3-efbcd5
-       (Carolina Blue, 86bbd8, Christler Blue, 5603ad,
-       Raisin Black, 1a181b, Dutch White, dbd8b3 Fairy Pink, efbcd5 */
+       https://coolors.co/a9ffcb-b6eea6-f9e7e7-f06543-042a2b
+       (Aquamarine Green, #A9FFCB, Celadon Green, #B6EEA6,
+       Lavender Blush White, #F9E7E7, Tomato Orange, #F06543, 
+       Dairy Green, #042A2B */
        header,
        footer {
-           background-color: #86bbd8;
-           color: #5603ad;
+           background-color: #A9FFCB;
+           color: #042A2B;
            padding: 40px 0;
            text-align: center;
        }
        header{
+        height: 100%;
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -37,8 +40,9 @@
        }
 
        h1 {
-           font-family: georgia, serif;
+           font-family: Impact, serif;
            margin: 0;
+           font-size: 4rem;
        }
 
        h2 {
@@ -83,6 +87,19 @@
         margin: 2px 0px;
         padding: 2px, 0px;
        }
+        .box{
+        position: absolute;
+        top: 0;
+        width: 33%;
+        height: 100%;
+        background-color: #B6EEA6;
+       }
+       .box.left{
+        left: 0;
+       }
+         .box.right{
+          right: 0;
+         }
 
 
 
@@ -93,12 +110,14 @@
     </head>
     <body>
         <header>
-        <h1>designedbyjosiah</h1>
+        <div class="box left"></div>
+        <h1>Jagged Bat</h1>
         <img 
         height="100" 
         width="100" 
-        src ="../images/logo.png" 
-        alt="Josiah Blanding Logo">;
+        src ="../images/bat-logo.png" 
+        alt="Josiah Blanding Logo">
+        <div class="box right"></div>
         </header>
         <main>
             <h2>Digital Styling Services</h2>
