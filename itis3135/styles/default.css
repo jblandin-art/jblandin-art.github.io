@@ -1,3 +1,7 @@
+       html {
+    overflow-y: scroll;
+        }
+       
        body {
            font-family: Garamond, sans-serif;
            color: #010101;
@@ -90,8 +94,6 @@
        img {
            max-width: 40%;
            height: auto;
-            display: block;
-              margin: 10px auto;
        }
        .bold{
               font-weight: bold;
