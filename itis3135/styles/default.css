@@ -90,6 +90,8 @@
        img {
            max-width: 40%;
            height: auto;
+            display: block;
+              margin: 10px auto;
        }
        .bold{
               font-weight: bold;
