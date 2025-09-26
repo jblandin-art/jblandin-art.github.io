@@ -19,23 +19,10 @@
            text-align: center;
        }
 
-       nav a {
+       a {
            color: orange;
            margin: 0 15px;
            text-decoration: none;
-       }
-       
-       nav a:visited {
-           color: brown;
-       }
-
-        footer p a {
-           color: orange;
-           text-decoration: none;
-       }
-       
-       footer p a:visited {
-           color: brown;
        }
 
        .secondary-nav {
@@ -69,11 +56,12 @@
        h1 {
            font-family: georgia, serif;
            margin: 0;
+           font-variant-numeric: lining-nums;
        }
 
        h2 {
            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-           margin: 0;
+           margin: 20px;
        }
 
        footer p {
@@ -97,6 +85,19 @@
        }
        .bold{
               font-weight: bold;
+       }
+
+       h3{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-bottom: 0em;
+       }
+
+       p{
+              line-height: 1.6;
+              margin-top: 0em;
+       }
+       body a{
+                margin-bottom: 0em;
        }
 
 

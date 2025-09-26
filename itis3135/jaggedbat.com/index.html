@@ -100,9 +100,9 @@
             margin: 0;
             font-size: 2rem;
             position: absolute;
-            top: 0%;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%, 0%);
+            transform: translate(-50%, -50%);
             color: #042A2B;
             z-index: 1;
         }
@@ -163,56 +163,12 @@
             text-decoration: none;
         }
 
-        /*
-     /* 
-     .box{
-     position: absolute;
-     top: 0;
-     width: 25vw;
-     height: 100%;
-     background-color: #B6EEA6;
-    }
-    .left{
-     left: 0;
-    }
-      .right{
-       right: 0;
-      }
-     */
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Jagged Bat</h1>
-        <div class="top-header">
-            
-        <nav>
-            <a href=".">Home</a> |
-            <a href="about.html">About</a>
-            </nav>
-            
-        </div>
-        <div class="bottom-header">
-        <img class="bat-logo" src="images/bat-logo.png" alt="Josiah Blanding Logo">
-        <nav>
-            <a href="index.html">Mindfulness Tools</a> |
-            <a href="about.html">Home & Desk Decor</a> |
-            <a href="products.html">All Products</a> |
-            <a href="contact.html">Accessories</a> |
-            <a href="https://www.etsy.com/shop/JaggedBat" target="_blank">Journals & Planners</a> 
-            </nav>
-            
-        </div>
-        
-
-        <!--
-        <div class="center-items">
-            <h1>Jagged Bat</h1>
-            <img class="bat-logo" src="images/bat-logo.png" alt="Josiah Blanding Logo">
-        </div>
-        <img class="cart-logo" src="images/cart.png" alt="Josiah Blanding Logo">
-    -->
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Care & Health</h2>
@@ -225,10 +181,9 @@
             healthier and happier you.</p>
     </main>
     <footer>
-        <p>© 2025 Josiah Blanding</p>
-        <p class="slogan">Care and cherish</p>
-        <p class="designed-by"><a href="../designedbyjosiah.com/index.html" target="_blank">designedbyjosiah</a></p>
+       <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/HTMLInclude.js"></script>
 </body>
 
 </html>
