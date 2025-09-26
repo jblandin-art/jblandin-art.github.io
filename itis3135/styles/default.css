@@ -100,6 +100,12 @@
                 margin-bottom: 0em;
        }
 
+       .list-header{
+                font-weight: 525; 
+                font-size: 1.2rem;
+                margin-bottom: 2em;
+       }
+
 
        /* ================== Media Queries ================== */
 
