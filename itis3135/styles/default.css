@@ -9,7 +9,14 @@
            margin: 0;
            padding: 0;
            background-color: #FEFEFE;
+           display: flex;
+           flex-direction: column;
+            min-height: 100vh;
        }
+
+        main {
+            flex: 1;
+        }
 
        header,
        footer {
@@ -28,9 +35,6 @@
        .secondary-nav {
            font-size: 0.85rem;
            color: #999;
-           /*mute color*/
-           margin-top: 5px;
-           /*slight spacing*/
            text-align: center;
        }
 
@@ -110,20 +114,31 @@
        /* ================== Media Queries ================== */
 
        /*Tablet (max-width: 1024px)*/
-       @media (max-width: 1024px) {
+       @media (min-width: 769px) and (max-width: 1024px) {
 
            header,
            footer {
+                
                padding: 15px;
+           }
+
+           p {
+               font-size: 1.9rem;
            }
 
            nav a {
                display: inline-block;
                margin: 10px;
+               font-size: 2rem;
+           }
+
+           footer a{
+            font-size: 2rem;
            }
 
            main {
                width: 95%;
+                margin: 0 auto;
            }
 
            h1 {
@@ -136,43 +151,41 @@
        }
 
 
-       /*Phone (max-width: 768px)*/
-       @media (max-width: 768px) {
+       /* Phone (max-width: 768px) */
+/* Phone (max-width: 768px) */
+@media (max-width: 768px) {
 
-           header,
-           footer {
-               padding: 20px 10px;
-           }
+    html {
+        overflow-x: hidden;
+    }
 
-           nav {
-               display: flex;
-               flex-direction: column;
-               gap: 10px;
-           }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
 
-           nav a {
-               margin: 5px 0;
-           }
+    h2 {
+        text-align: center;
+    }
 
-           main {
-               width: 100%;
-               padding: 0 10px;
-           }
+    h1 {
+        font-size: 1.1rem; /* overrides any tablet h1 size */
+    }
 
-           h1 {
-               font-size: 1.5rem;
-           }
+    /* override any tablet nav styles */
+    nav:first-of-type a {
+        margin: 8px 0; 
+    }
 
-           h2 {
-               font-size: 1.2rem;
-           }
+    /* secondary nav adjustments */
+    .secondary-nav {
+        font-size: 0.85rem; 
+        margin-top: 0;
+        padding-top: 0;
+    }
+    p{
+         font-size: 1.6rem;
+}
+}
 
-           footer a img {
-               display: block;
-               margin: 10px auto 0 auto;
-           }
 
-           footer p {
-               font-size: 0.9rem;
-           }
-       }
