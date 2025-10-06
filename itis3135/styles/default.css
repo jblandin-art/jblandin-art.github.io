@@ -1,7 +1,7 @@
        html {
-    overflow-y: scroll;
-        }
-       
+           overflow-y: scroll;
+       }
+
        body {
            font-family: Garamond, sans-serif;
            color: #010101;
@@ -11,12 +11,12 @@
            background-color: #FEFEFE;
            display: flex;
            flex-direction: column;
-            min-height: 100vh;
+           min-height: 100vh;
        }
 
-        main {
-            flex: 1;
-        }
+       main {
+           flex: 1;
+       }
 
        header,
        footer {
@@ -87,28 +87,75 @@
            max-width: 40%;
            height: auto;
        }
-       .bold{
-              font-weight: bold;
+
+       .bold {
+           font-weight: bold;
        }
 
-       h3{
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                margin-bottom: 0em;
+       h3 {
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           margin-bottom: 0em;
        }
 
-       p{
-              line-height: 1.6;
-              margin-top: 0em;
-       }
-       body a{
-                margin-bottom: 0em;
+       p {
+           line-height: 1.6;
+           margin-top: 0em;
        }
 
-       .list-header{
-                font-weight: 525; 
-                font-size: 1.2rem;
-                margin-bottom: 2em;
+       body a {
+           margin-bottom: 0em;
        }
+
+       .list-header {
+           font-weight: 525;
+           font-size: 1.2rem;
+           margin-bottom: 2em;
+       }
+
+       table {
+           width: 100%;
+           border-collapse: collapse;
+           margin: 2em 0;
+           font-family: 'Trebuchet MS', sans-serif;
+           background-color: #FEFEFE;
+       }
+
+       caption {
+           caption-side: top;
+           font-weight: bold;
+           font-size: 1.2rem;
+           margin-bottom: 1em;
+           text-align: center;
+       }
+
+       thead th {
+           background-color: #EEE0CB;
+           color: #BAA898;
+           padding: 10px;
+           text-align: left;
+           border: 1px solid #BAA898;
+       }
+
+       tbody td {
+           border: 1px solid #BAA898;
+           padding: 8px;
+           vertical-align: top;
+           word-wrap: break-word;
+       }
+
+       tbody tr:nth-child(even) {
+           background-color: #FFF9F0;
+       }
+
+       tbody tr:hover {
+           background-color: #FFF1E0;
+       }
+
+       td,
+       th {
+           line-height: 1.4;
+       }
+
 
 
        /* ================== Media Queries ================== */
@@ -118,7 +165,7 @@
 
            header,
            footer {
-                
+
                padding: 15px;
            }
 
@@ -132,13 +179,13 @@
                font-size: 2rem;
            }
 
-           footer a{
-            font-size: 2rem;
+           footer a {
+               font-size: 2rem;
            }
 
            main {
                width: 95%;
-                margin: 0 auto;
+               margin: 0 auto;
            }
 
            h1 {
@@ -152,40 +199,40 @@
 
 
        /* Phone (max-width: 768px) */
-/* Phone (max-width: 768px) */
-@media (max-width: 768px) {
+       /* Phone (max-width: 768px) */
+       @media (max-width: 768px) {
 
-    html {
-        overflow-x: hidden;
-    }
+           html {
+               overflow-x: hidden;
+           }
 
-    main {
-        width: 90%;
-        margin: 0 auto;
-    }
+           main {
+               width: 90%;
+               margin: 0 auto;
+           }
 
-    h2 {
-        text-align: center;
-    }
+           h2 {
+               text-align: center;
+           }
 
-    h1 {
-        font-size: 1.1rem; /* overrides any tablet h1 size */
-    }
+           h1 {
+               font-size: 1.1rem;
+               /* overrides any tablet h1 size */
+           }
 
-    /* override any tablet nav styles */
-    nav:first-of-type a {
-        margin: 8px 0; 
-    }
+           /* override any tablet nav styles */
+           nav:first-of-type a {
+               margin: 8px 0;
+           }
 
-    /* secondary nav adjustments */
-    .secondary-nav {
-        font-size: 0.85rem; 
-        margin-top: 0;
-        padding-top: 0;
-    }
-    p{
-         font-size: 1.6rem;
-}
-}
+           /* secondary nav adjustments */
+           .secondary-nav {
+               font-size: 0.85rem;
+               margin-top: 0;
+               padding-top: 0;
+           }
 
-
+           p {
+               font-size: 1.6rem;
+           }
+       }
