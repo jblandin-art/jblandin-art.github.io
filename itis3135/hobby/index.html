@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title">What</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Cormorant+Garamond&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
     <!-- Embedded Style Sheets-->
     <style>
-        html{
+        html {
             background-image: url("images/bgImageTwo.jpg");
         }
-        h1{
+
+        h1 {
             text-align: center;
             color: rgba(255, 255, 255, 0.993);
             background-color: black;
@@ -30,8 +33,9 @@
             justify-content: center;
             align-items: center;
         }
-        h2{
-            border-radius: 5px; 
+
+        h2 {
+            border-radius: 5px;
             text-align: center;
             color: rgba(255, 255, 255, 0.993);
             background-color: black;
@@ -46,7 +50,8 @@
             justify-content: center;
             align-items: center;
         }
-        .flare{
+
+        .flare {
             position: absolute;
             height: 80px;
             width: 500px;
@@ -57,45 +62,53 @@
             filter: hue-rotate(-50deg) brightness(.8);
 
         }
-        p{
+
+        p {
             color: white;
             font-size: 16px;
             margin: 0px;
             text-align: center;
             font-family: Cormorant Garamond, serif;
-            
+
         }
-        nav{
+
+        nav {
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 2px;
             margin: 0px;
         }
-        nav button {
-    text-decoration: none;
-    color: white;
-    height: auto;
-    background-color: black;
-    padding: 15px 40px;
-    opacity: .8;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px auto;
-    border: none;          /* removes default button border */
-    border-radius: 5px;    /* optional, keeps style similar to a */
-    cursor: pointer;       /* makes it obvious it's clickable */
-    font-family: Cormorant Garamond, serif; /* matches your other text */
-    font-size: 16px;
-}
 
-nav button:hover {
-    color: red;
-    transition: color .3s ease;
-}
-        a{
+        nav button {
+            text-decoration: none;
+            color: white;
+            height: auto;
+            background-color: black;
+            padding: 15px 40px;
+            opacity: .8;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+            border: none;
+            /* removes default button border */
+            border-radius: 5px;
+            /* optional, keeps style similar to a */
+            cursor: pointer;
+            /* makes it obvious it's clickable */
+            font-family: Cormorant Garamond, serif;
+            /* matches your other text */
+            font-size: 16px;
+        }
+
+        nav button:hover {
+            color: red;
+            transition: color .3s ease;
+        }
+
+        a {
             text-decoration: none;
             color: white;
             width: 12%;
@@ -105,16 +118,20 @@ nav button:hover {
             text-align: center;
             margin: 10px auto;
         }
-        a:hover{
+
+        a:hover {
             color: red;
             transition: color .3s ease;
         }
-        .matchNumbers{
+
+        .matchNumbers {
             font-variant-numeric: tabular-nums;
             font-size: 11px;
             font-family: Cormorant Garamond, serif;
         }
-        .black-box, footer{
+
+        .black-box,
+        footer {
             color: white;
             background-color: black;
             padding: 20px;
@@ -124,179 +141,286 @@ nav button:hover {
             font-family: Cormorant Garamond, serif;
             font-variant-numeric: tabular-nums;
         }
-        
+
+        /* ====== Responsive Design ====== */
+
+        /* Tablet adjustments (landscape tablets, ~768px and below) */
+        @media (max-width: 900px) {
+            h1 {
+                width: 90%;
+                font-size: 32px;
+                height: auto;
+                padding: 10px;
+            }
+
+            h2 {
+                width: 80%;
+                font-size: 24px;
+                height: auto;
+                padding: 8px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+
+            nav button {
+                padding: 10px 25px;
+                font-size: 15px;
+            }
+
+            .black-box {
+                width: 90%;
+                font-size: 15px;
+            }
+
+            img {
+                width: 90% !important;
+                max-width: 500px !important;
+            }
+        }
+
+        /* Mobile adjustments (~600px and below) */
+        @media (max-width: 600px) {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                width: 95%;
+                font-size: 26px;
+            }
+
+            h2 {
+                width: 90%;
+                font-size: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+            }
+
+            nav button {
+                width: 80%;
+                padding: 12px;
+                font-size: 16px;
+            }
+
+            .black-box {
+                margin: 10px;
+                padding: 15px;
+                font-size: 14px;
+            }
+
+            figure img {
+                width: 100% !important;
+                border-radius: 10px;
+            }
+
+            figcaption {
+                font-size: 13px;
+            }
+
+            footer {
+                font-size: 14px;
+                padding: 15px;
+            }
+        }
     </style>
-    </head>
+</head>
+
 <body>
     <header>
-<h1>Hobby Page</h1>
-    <nav>
-        <button onclick="showSection('what')" aria-current="page">What</button>
-        <button onclick="showSection('who')">Who</button>
-        <button onclick="showSection('where')">Where</button>
-        <button onclick="showSection('ai')">AI Prompts</button>
-        <button onclick="showSection('how')">How</button>
-        <button onclick="showSection('when')">When</button>
-        <button onclick="showSection('why')">Why</button>
-    </nav>
-    <nav>
-        
-    </nav>
-</header>
-<!-- What Section -->
-<section id="what" class="section">
-    <h2>What</h2>
-    <div class="black-box">
-        <p>
-            Images are amazing. I enjoy capturing moments and telling stories through pictures and video. Over the years, I have shot hundreds of music videos and sports events, and I’ve edited many other types of videos, including AMVs and game montages.
-        </p>
-        <figure>
-            <img src="images/photographyFive.jpg" alt="Sample of my photography work" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A glimpse of me in the field.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+        <h1>Hobby Page</h1>
+        <nav>
+            <button onclick="showSection('what')" aria-current="page">What</button>
+            <button onclick="showSection('who')">Who</button>
+            <button onclick="showSection('where')">Where</button>
+            <button onclick="showSection('ai')">AI Prompts</button>
+            <button onclick="showSection('how')">How</button>
+            <button onclick="showSection('when')">When</button>
+            <button onclick="showSection('why')">Why</button>
+        </nav>
+        <nav>
 
-<!-- Who Section -->
-<section id="who" class="section" hidden>
-    <h2>Who</h2>
-    <div class="black-box">
-        <p>
-            I'm Josiah Blanding. Growing up playing video games shaped my creativity and later influenced how I learned video production and editing. Gaming helped me discover my passion for storytelling through visuals.
-        </p>
-        <figure>
-            <img src="images/photographyOne.jpg" alt="Selfie at the top of a parking garage" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A selfie with my camera at the top of a parking garage.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+        </nav>
+    </header>
+    <!-- What Section -->
+    <section id="what" class="section">
+        <h2>What</h2>
+        <div class="black-box">
+            <p>
+                Images are amazing. I enjoy capturing moments and telling stories through pictures and video. Over the
+                years, I have shot hundreds of music videos and sports events, and I’ve edited many other types of
+                videos, including AMVs and game montages.
+            </p>
+            <figure>
+                <img src="images/photographyFive.jpg" alt="Sample of my photography work"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A glimpse of me in the field.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-<!-- Where Section -->
-<section id="where" class="section" hidden>
-    <h2>Where</h2>
-    <div class="black-box">
-        <p>
-            I have shot projects all across North Carolina – from Catawba College to Forest Park, throughout every corner of Charlotte, and many other locations. My freelance work has taken me everywhere in the state.
-        </p>
-        <figure>
-            <img src="images/photographyTwo.jpg" alt="Cover band TREMONT in Kannapolis, NC" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A shot in Kannapolis, NC for a cover band called TREMONT.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+    <!-- Who Section -->
+    <section id="who" class="section" hidden>
+        <h2>Who</h2>
+        <div class="black-box">
+            <p>
+                I'm Josiah Blanding. Growing up playing video games shaped my creativity and later influenced how I
+                learned video production and editing. Gaming helped me discover my passion for storytelling through
+                visuals.
+            </p>
+            <figure>
+                <img src="images/photographyOne.jpg" alt="Selfie at the top of a parking garage"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A selfie with my camera at the top of a parking garage.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-<!-- How Section -->
-<section id="how" class="section" hidden>
-    <h2>How</h2>
-    <div class="black-box">
-        <p>
-            I began learning After Effects and other editing software as a kid while playing video games. Competitive gaming and montages inspired me to create my own videos, and these experiences remain some of my fondest memories.
-        </p>
-        <figure>
-            <img src="images/skateboard.png" alt="Montage screenshot from Skate 3" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A screenshot from a montage I made of my favorite childhood game, Skate 3.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+    <!-- Where Section -->
+    <section id="where" class="section" hidden>
+        <h2>Where</h2>
+        <div class="black-box">
+            <p>
+                I have shot projects all across North Carolina – from Catawba College to Forest Park, throughout every
+                corner of Charlotte, and many other locations. My freelance work has taken me everywhere in the state.
+            </p>
+            <figure>
+                <img src="images/photographyTwo.jpg" alt="Cover band TREMONT in Kannapolis, NC"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A shot in Kannapolis, NC for a cover band called TREMONT.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-<!-- When Section -->
-<section id="when" class="section" hidden>
-    <h2>When</h2>
-    <div class="black-box">
-        <p>
-            Most of my freelance work occurred from 2018 to 2023. While I have stepped back from shooting professionally, I continue to enjoy editing and capturing photos for fun.
-        </p>
-        <figure>
-            <img src="images/photographyThree.jpg" alt="High school basketball playoffs" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A shot at my high school during the playoffs. This is Amare Haynie, an elite basketball player, celebrating a hard-fought victory.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+    <!-- How Section -->
+    <section id="how" class="section" hidden>
+        <h2>How</h2>
+        <div class="black-box">
+            <p>
+                I began learning After Effects and other editing software as a kid while playing video games.
+                Competitive gaming and montages inspired me to create my own videos, and these experiences remain some
+                of my fondest memories.
+            </p>
+            <figure>
+                <img src="images/skateboard.png" alt="Montage screenshot from Skate 3"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A screenshot from a montage I made of my favorite childhood game, Skate 3.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-<!-- Why Section -->
-<section id="why" class="section" hidden>
-    <h2>Why</h2>
-    <div class="black-box">
-        <p>
-            I often experience strong emotions, and creating is my outlet. It brings me closer to my inner child, allowing me to feel peace and satisfaction through the process of visual storytelling.
-        </p>
-        <figure>
-            <img src="images/photographyFour.jpg" alt="Looking down at the camera" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A shot of me looking down at the camera.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+    <!-- When Section -->
+    <section id="when" class="section" hidden>
+        <h2>When</h2>
+        <div class="black-box">
+            <p>
+                Most of my freelance work occurred from 2018 to 2023. While I have stepped back from shooting
+                professionally, I continue to enjoy editing and capturing photos for fun.
+            </p>
+            <figure>
+                <img src="images/photographyThree.jpg" alt="High school basketball playoffs"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A shot at my high school during the playoffs. This is Amare Haynie, an elite basketball player,
+                    celebrating a hard-fought victory.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
 
-<!-- AI Prompts Section -->
-<section id="ai" class="section" hidden>
-    <h2>AI Prompts</h2>
-    <div class="black-box">
-         <p><strong>The Rest of the Pages Prompt:</strong><br>
-            I had AI duplicate the style I created for the first page across all the pages.
-            This way I only had to do the work once, and the rest could be automated. 
-        </p>
-        <p><strong>Button OnClick Prompt:</strong><br>
-            Change nav links into buttons and add onclick handlers to switch sections using JavaScript.
-            The actual function that those handlers execute were written by me personally but I did use
-            AI to help me debug it.
-        </p>
-        <figure>
-            <img src="images/lastpic.jpg" alt="Face covered on a rainy day" style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
-            <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
-                A shot of me with my face covered on a rainy day.
-            </figcaption>
-        </figure>
-    </div>
-</section>
+    <!-- Why Section -->
+    <section id="why" class="section" hidden>
+        <h2>Why</h2>
+        <div class="black-box">
+            <p>
+                I often experience strong emotions, and creating is my outlet. It brings me closer to my inner child,
+                allowing me to feel peace and satisfaction through the process of visual storytelling.
+            </p>
+            <figure>
+                <img src="images/photographyFour.jpg" alt="Looking down at the camera"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A shot of me looking down at the camera.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- AI Prompts Section -->
+    <section id="ai" class="section" hidden>
+        <h2>AI Prompts</h2>
+        <div class="black-box">
+            <p><strong>The Rest of the Pages Prompt:</strong><br>
+                I had AI duplicate the style I created for the first page across all the pages.
+                This way I only had to do the work once, and the rest could be automated.
+            </p>
+            <p><strong>Button OnClick Prompt:</strong><br>
+                Change nav links into buttons and add onclick handlers to switch sections using JavaScript.
+                The actual function that those handlers execute were written by me personally but I did use
+                AI to help me debug it.
+            </p>
+            <figure>
+                <img src="images/lastpic.jpg" alt="Face covered on a rainy day"
+                    style="width:80%; max-width:600px; display:block; margin:auto; border-radius:15px;">
+                <figcaption style="text-align:center; font-style:italic; margin-top:10px; color:white;">
+                    A shot of me with my face covered on a rainy day.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
     <footer>
-    <p>&copy; 2024 <span class="matchNumbers"> Josiah Blanding</span></p>
-    <p class="designed-by"><a href="../designedbyjosiah.com/index.html" target="_blank">designedbyjosiah</a></p>
-</footer>
-<script>
-    const sections = Array.from(document.querySelectorAll('.section'));
-    const buttons = Array.from(document.querySelectorAll('nav button'));
-    const title = document.getElementById("title");
+        <p>&copy; 2024 <span class="matchNumbers"> Josiah Blanding</span></p>
+        <p class="designed-by"><a href="../designedbyjosiah.com/index.html" target="_blank">designedbyjosiah</a></p>
+    </footer>
+    <script>
+        const sections = Array.from(document.querySelectorAll('.section'));
+        const buttons = Array.from(document.querySelectorAll('nav button'));
+        const title = document.getElementById("title");
 
-    // If everything is hidden then show the home page
-    if (sections.every((section) => section.hidden === true)){
-        sections.find((section) => section.id === "what").hidden = false;
-    }
-    console.log("jjjjj");
+        // If everything is hidden then show the home page
+        if (sections.every((section) => section.hidden === true)) {
+            sections.find((section) => section.id === "what").hidden = false;
+        }
+        console.log("jjjjj");
 
-    function showSection(sec) {
-    const newSection = sections.find((section) => section.id === sec);
-    const currentSection = sections.find((section) => !section.hidden);
+        function showSection(sec) {
+            const newSection = sections.find((section) => section.id === sec);
+            const currentSection = sections.find((section) => !section.hidden);
 
-    // Only switch if the clicked section is currently hidden
-    if (newSection && newSection.hidden) {
-        // Hide the current section and show the new one
-        if (currentSection) currentSection.hidden = true;
-        newSection.hidden = false;
+            // Only switch if the clicked section is currently hidden
+            if (newSection && newSection.hidden) {
+                // Hide the current section and show the new one
+                if (currentSection) currentSection.hidden = true;
+                newSection.hidden = false;
 
-        // Update the title text based on the new section’s <h2>
-        const visibleSection = sections.find((section) => !section.hidden);
-        title.innerHTML = visibleSection.querySelector('h2').textContent;
+                // Update the title text based on the new section’s <h2>
+                const visibleSection = sections.find((section) => !section.hidden);
+                title.innerHTML = visibleSection.querySelector('h2').textContent;
 
-        // Update ARIA (accessibility)
-        buttons.forEach((btn) => btn.removeAttribute('aria-current'));
-        const activeButton = buttons.find((btn) => btn.getAttribute('onclick').includes(sec));
-        if (activeButton) activeButton.setAttribute('aria-current', 'page');
-    }
-}
+                // Update ARIA (accessibility)
+                buttons.forEach((btn) => btn.removeAttribute('aria-current'));
+                const activeButton = buttons.find((btn) => btn.getAttribute('onclick').includes(sec));
+                if (activeButton) activeButton.setAttribute('aria-current', 'page');
+            }
+        }
 
 
-</script>
+    </script>
 </body>
+
 </html>
