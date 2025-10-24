@@ -1,11 +1,11 @@
        html {
            overflow-y: scroll;
        }
-       
+
         main {
            max-width: 800px;
            width: 90%;
-           margin: auto;
+           margin: 0 auto;
            background-color: #FEFEFE;
            flex: 1;
        }
