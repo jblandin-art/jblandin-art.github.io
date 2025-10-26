@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Josiah Blanding's | Jagged Bat | Introduction Form</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <!-- Polyfill for older browsers -->
+    <script src="https://cdn.jsdelivr.net/npm/@chenfengyuan/datepicker"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section id="introduction" hidden>
+            <h2>Introduction Form</h2>
+            <figure>
+                <img src="images/pictureofme.jpg" alt="Picture of me in front of a CyberTruck" id="intro-image">
+                <figcaption id="intro-image-caption">August, 2024</figcaption>
+            </figure>
+            <p id="personal-statement">I’m a freshly re-enrolled cybersecurity major who got tired of shooting crazy
+                music videos. I’m hopelessly addicted to REMATCH so if anybody plays hit me up. I also haven’t coded in
+                5 years so thanks in advance for the help.</p>
+            <ul>
+                <li id="personal-background"><span class="bold">Personal Background: — </span>Family’s from the north.
+                    I’ve lived here most of my life. I come from a basketball family, some military ties.</li>
+                <li id="professional-background"><span class="bold">Professional Background: — </span>I’ve been a
+                    journeyman. A few years at McDonalds, a few restaurants,
+                    and some warehouses.</li>
+                <li id="academic-background"><span class="bold">Academic Background: — </span>Computer Science
+                    (Cybersecurity), 2027
+                    <ul id="class-list">
+                        <li><span class="bold">ESCI 1101 - Earth Science: </span>Had a few issues with this class a few
+                            years back. Not sure why but here we go again.</li>
+                        <li><span class="bold">ITIS 3135 - Front-End Web Application Development: </span>I need to learn
+                            HTML and CSS and pretty much everything because I’m a noob.</li>
+                        <li><span class="bold">CTCM 2530 - Interdisciplinary Critical Thinking and Communication:
+                            </span>I have to take this class to help the University prove they produce well rounded
+                            students.</li>
+                        <li><span class="bold">STAT 2122 - Intro to Prob & Stat: </span>Not really sure why this is
+                            required but I’m sure I’ll figure out someday.</li>
+                        <li><span class="bold">ITSC 2175 - Logic and Algorithms: </span>I assume it may relate to coding
+                            language logic somehow? Or that I’ll be applying what I learn in algorithms, we’ll see.</li>
+                    </ul>
+                </li>
+                <li id="funny-item"><span class="bold">Funny/Interesting Item about Yourself: </span>When I was younger
+                    I multiplied random numbers in my head to relieve anxiety.</li>
+            </ul>
+            <blockquote>“What do you mean by do? And what do you mean by you? And what do you mean by believe??”
+                <cite>- A Genius</cite>
+            </blockquote>
+        </section>
+        <button id="fill-out-again" hidden>Fill Out The Form Again</button>
+        <section id="form-section">
+            <h2>Introduction Form</h2>
+            <form id="form">
+                <label for="first-name-input">First Name
+                    <input id="first-name-input" name="first-name" value="Josiah"
+                        placeholder="First name (e.g., Josiah)">
+                </label>
+                <label for="last-name-input">Last Name
+                    <input id="last-name-input" name="last-name" value="Blanding"
+                        placeholder="Last name (e.g., Blanding)">
+                </label>
+                <label for="mascot-first-name-input">First Mascot Name
+                    <input id="mascot-first-name-input" name="mascot-first-name" value="Jagged"
+                        placeholder="Mascot first name (e.g., Jagged)">
+                </label>
+                <label for="mascot-last-name-input">Last Mascot Name
+                    <input id="mascot-last-name-input" name="mascot-last-name" value="Bat"
+                        placeholder="Mascot last name (e.g., Bat)">
+                </label>
+                <input type="file" id="img-input">
+                <label for="img-input" class="file-label">Upload Image</label>
+
+                <label for="img-caption-input">Image Caption
+                    <input id="img-caption-input" name="img-caption" value="August, 2024"
+                        placeholder="Image caption (e.g., August, 2024)">
+                </label>
+                <label for="divider-input">Divider, Max 5 Characters (Some Emojis Won't Fit)
+                    <input id="divider-input" name="divider-input" value="|" placeholder="|, ☺️" minlength="1" maxlength="5">
+                </label>
+                <label for="personal-statement-input">Personal Statement
+                    <textarea id="personal-statement-input"
+                        placeholder="Brief statement that represents who you are.">I’m a freshly re-enrolled cybersecurity major who got tired of shooting crazy music videos. I’m hopelessly addicted to REMATCH so if anybody plays hit me up. I also haven’t coded in 5 years so thanks in advance for the help.</textarea>
+                </label>
+                <label for="personal-background-input">Personal Background
+                    <textarea id="personal-background-input"
+                        placeholder="Brief personal background (family, hometown, interests)">Family’s from the north. I’ve lived here most of my life. I come from a basketball family, some military ties.</textarea>
+                </label>
+
+                <label for="professional-background-input">Professional Background
+                    <textarea id="professional-background-input"
+                        placeholder="Brief professional background (jobs, experience)">Family’s from the north. I’ve lived here most of my life. I come from a basketball family, some military ties.</textarea>
+                </label>
+
+                <label for="academic-background-input">Academic Background
+                    <input id="academic-background-input" name="academic-background"
+                        value="Computer Science (Cybersecurity), 2027"
+                        placeholder="Academic background (major and expected graduation, e.g., Computer Science (Cybersecurity), 2027)">
+                </label>
+
+                <figure>
+                    <figcaption>Class List</figcaption>
+                    <ul id="form-class-list">
+                        <li>
+                            <label for="class-list-input-1">Class 1
+                                <input id="class-list-input-1" class="class-info" name="class-list" type="text"
+                                    value="ESCI 1101 - Earth Science: "
+                                    placeholder="Course code and title (e.g., ESCI 1101 - Earth Science)">
+                            </label>
+                            <label for="class-list-description-1" class="why-take-class">Why you're taking the class.
+                                <textarea id="class-list-description-1" class="class-info"
+                                    placeholder="Brief reason for taking this class (e.g., had issues previously)">Had a few issues with this class a few years back. Not sure why but here we go again.</textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="class-list-input-2">Class 2
+                                <input id="class-list-input-2" class="class-info" name="class-list" type="text"
+                                    value="ITIS 3135 - Front-End Web Application Development: "
+                                    placeholder="Course code and title (e.g., ITIS 3135 - Front-End Web Application Development)">
+                            </label>
+                            <label for="class-list-description-2" class="why-take-class">Why you're taking the class.
+                                <textarea id="class-list-description-2" class="class-info"
+                                    placeholder="Brief reason for taking this class (e.g., learn HTML/CSS)">I need to learn HTML and CSS and pretty much everything because I’m a noob.</textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="class-list-input-3">Class 3
+                                <input id="class-list-input-3" name="class-list" type="text"
+                                    value="CTCM 2530 - Interdisciplinary Critical Thinking and Communication: "
+                                    class="class-info"
+                                    placeholder="Course code and title (e.g., CTCM 2530 - Interdisciplinary Critical Thinking and Communication)">
+                            </label>
+                            <label for="class-list-description-3" class="why-take-class">Why you're taking the class.
+                                <textarea id="class-list-description-3" class="class-info"
+                                    placeholder="Brief reason for taking this class (e.g., develop critical thinking skills)">I have to take this class to help the University prove they produce well rounded students.</textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="class-list-input-4">Class 4
+                                <input id="class-list-input-4" name="class-list" type="text"
+                                    value="STAT 2122 - Intro to Prob & Stat: " class="class-info"
+                                    placeholder="Course code and title (e.g., STAT 2122 - Intro to Prob & Stat)">
+                            </label>
+                            <label for="class-list-description-4" class="why-take-class">Why you're taking the class.
+                                <textarea id="class-list-description-4" class="class-info"
+                                    placeholder="Brief reason for taking this class (e.g., fulfill requirements)">Not really sure why this is required but I’m sure I’ll figure out someday.</textarea>
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="class-list-input-5">Class 5
+                                <input id="class-list-input-5" name="class-list" type="text"
+                                    value="ITSC 2175 - Logic and Algorithms: " class="class-info"
+                                    placeholder="Course code and title (e.g., ITSC 2175 - Logic and Algorithms)">
+                            </label>
+                            <label for="class-list-description-5" class="why-take-class">Why you're taking the class.
+                                <textarea id="class-list-description-5" class="class-info"
+                                    placeholder="Brief reason for taking this class (e.g., learn algorithms)">I assume it may relate to coding language logic somehow? Or that I’ll be applying what I learn in algorithms, we’ll see.</textarea>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <button id="add-class" type="button">Add Another Class</button>
+                </figure>
+
+                <label for="funny-item-input">Funny/Interesting Item about Yourself: <textarea id="funny-item-input"
+                        name="funny-item" rows="2"
+                        placeholder="Share a short funny or interesting fact about yourself">When I was younger I multiplied random numbers in my head to relieve anxiety. </textarea>
+                </label>
+                <label for="platform-input">Primary Computer Platform I Work On: <input id="platform-input"
+                        value="Dell, Windows 11, Laptop, J Murray Atkins" name="platform"
+                        placeholder="What computer platform do you use and where do you study?">
+                </label>
+                <label for="acknowledgment-input">Sign Here to Acknowledge The Academic Code of Conduct: <input id="acknowledgment-input"
+                        value="Josiah Q. Blanding" name="acknowledgment"
+                        placeholder="i.e Jacob R. Bell">
+                </label>
+                <label for="date-input">Date: <input id="date-input"
+                        value="2025-08-29" name="date" type="date">
+                </label>
+                <label for="quote-input">A Quote: <textarea id="quote-input" name="quote" rows="2"
+                        placeholder="Share a quote that you like">“What do you mean by do? And what do you mean by you? And what do you mean by believe??”</textarea>
+                </label>
+                <label for="quote-author-input">Quote's Author:
+                    <input id="quote-author-input" name="quote-author" placeholder="The author of your quote"
+                        value="A Genius">
+                </label>
+                <div id="buttons">
+                    <button id="clear-btn" type="button">Clear</button>
+                    <button id="submit-btn" type="submit">Submit</button>
+                    <button id="reset-btn" type="button">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/introduction.js"></script>
+</body>
+
+</html>

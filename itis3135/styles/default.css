@@ -2,7 +2,7 @@
            overflow-y: scroll;
        }
 
-        main {
+       main {
            max-width: 800px;
            width: 90%;
            margin: 0 auto;
@@ -153,6 +153,160 @@
            line-height: 1.4;
        }
 
+       input,
+       textarea {
+           display: block;
+           width: 100%;
+           box-sizing: border-box;
+           margin: 5px 0;
+       }
+
+       textarea {
+           resize: none;
+           overflow-y: scroll;
+       }
+
+       label {
+           font-weight: bold;
+           font-size: 1.2 rem;
+           display: block;
+       }
+
+       .why-take-class {
+
+           margin: 10px 0;
+           font-weight: normal;
+           font-size: 1rem;
+       }
+
+       figcaption {
+           font-size: 1.2rem;
+           font-weight: bold;
+       }
+
+       #buttons {
+           display: flex;
+           justify-content: center;
+           gap: 5em;
+       }
+
+       #add-class {
+           display: block;
+           margin: 0 auto;
+       }
+
+       [hidden] {
+           display: none !important;
+       }
+
+       #fill-out-again {
+           display: block;
+           margin: 25px auto;
+       }
+
+       #divider-input {
+           width: 5%;
+           text-align: center;
+       }
+
+       blockquote {
+           max-width: 700px;
+           /* make it narrower than the container */
+           margin: 1.2em auto;
+           /* top/bottom 1.2em, left/right auto = centered */
+           padding: 1em 1.2em;
+           font-style: italic;
+           border-left: 4px solid #DDD;
+           background: #FFF8F0;
+       }
+
+       blockquote cite {
+           display: block;
+           /* put the author on its own line */
+           margin-top: 0.6em;
+           text-align: right;
+           /* align the author to the right of the blockquote */
+           font-style: normal;
+           color: #666;
+           font-size: 0.95rem;
+       }
+
+       button {
+           background-color: #BAA898;
+           /* warm brownish tone */
+           color: #FEFEFE;
+           /* light text for contrast */
+           border: 2px solid #EEE0CB;
+           /* subtle border */
+           border-radius: 12px;
+           /* rounded corners for soft look */
+           padding: 0.6em 1.2em;
+           /* comfortable click area */
+           font-family: 'Trebuchet MS', sans-serif;
+           font-size: 1rem;
+           font-weight: bold;
+           cursor: pointer;
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+           /* soft shadow */
+           transition: all 0.2s ease-in-out;
+           display: inline-block;
+           text-align: center;
+       }
+
+       button:hover {
+           background-color: #EEE0CB;
+           /* lighter on hover */
+           color: #BAA898;
+           /* swap text color for contrast */
+           transform: translateY(-2px);
+           /* subtle lift effect */
+           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+       }
+
+       button:active {
+           transform: translateY(0);
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+       }
+
+       /* Hide the actual file input */
+       input[type="file"] {
+           display: none;
+       }
+
+       /* Style the label to look like a button */
+       .file-label {
+           background-color: #BAA898;
+           /* warm brown */
+           color: #FEFEFE;
+           /* light text */
+           border: 2px solid #EEE0CB;
+           /* subtle border */
+           border-radius: 12px;
+           padding: 0.6em 1.2em;
+           font-family: 'Trebuchet MS', sans-serif;
+           font-size: 1rem;
+           font-weight: bold;
+           cursor: pointer;
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+           display: inline-block;
+           text-align: center;
+           transition: all 0.2s ease-in-out;
+       }
+
+       /* Hover effect */
+       .file-label:hover {
+           background-color: #EEE0CB;
+           color: #BAA898;
+           transform: translateY(-2px);
+           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+       }
+
+       /* Active state when clicked */
+       .file-label:active {
+           transform: translateY(0);
+           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+       }
+
 
 
        /* ================== Media Queries ================== */
@@ -195,7 +349,6 @@
        }
 
 
-       /* Phone (max-width: 768px) */
        /* Phone (max-width: 768px) */
        @media (max-width: 768px) {
 
