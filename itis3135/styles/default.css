@@ -92,6 +92,8 @@
        h3 {
            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
            margin-bottom: 0em;
+           font-weight: 100;
+           color: #b7b7b7d5
        }
 
        p {
@@ -242,6 +244,8 @@
            /* rounded corners for soft look */
            padding: 0.6em 1.2em;
            /* comfortable click area */
+           margin-bottom: 20px;
+           margin-top: 20px;
            font-family: 'Trebuchet MS', sans-serif;
            font-size: 1rem;
            font-weight: bold;
@@ -306,6 +310,21 @@
            transform: translateY(0);
            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
        }
+
+       pre {
+           padding: 1em;
+           border-radius: 8px;
+           font-family: "Fira Code", monospace;
+           overflow-x: auto;
+           line-height: 1.4;
+           white-space: pre-wrap;
+           /* wrap lines but preserve newlines */
+           word-break: break-word;
+           /* break long words if needed */
+           overflow-x: hidden;
+           /* no horizontal scroll */
+       }
+
 
 
 
@@ -386,3 +405,4 @@
                font-size: 1.6rem;
            }
        }
+       

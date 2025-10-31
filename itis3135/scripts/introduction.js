@@ -43,6 +43,8 @@ const originalClassList = formClassList.innerHTML;
 // Sections shown/hidden when submitting or editing the form
 const formSection = document.getElementById('form-section');
 const introduction = document.getElementById("introduction"); //introduction section // it's default is hidden
+const generateHTMLSection = document.getElementById("generate-html-section");
+const generateJSONSection = document.getElementById("generate-json-section");
 
 const fillOutAgainBtn = document.getElementById("fill-out-again");
 
@@ -152,6 +154,7 @@ form.addEventListener("submit", (e) => {
 
         // Build the static structure of the introduction (initial HTML)
         introduction.innerHTML = `<h2>Introduction Form</h2>
+        <h3>ITIS3135 ${dividerInput.value} ${firstNameInput.value} ${lastNameInput.value}'s ${dividerInput.value} ${mascotFirstName.value} ${mascotLastName.value}</h3>
             <figure>
                 <img src="images/pictureofme.jpg" alt="Picture of me in front of a CyberTruck" id="intro-image">
                 <figcaption id="intro-image-caption">August, 2024</figcaption>
@@ -215,16 +218,6 @@ form.addEventListener("submit", (e) => {
         const imageCaption = document.getElementById("intro-image-caption");
         imageCaption.textContent = imageCaptionInput.value;
 
-        // Update page header text using name and mascot inputs with divider inserted
-        const h1 = document.getElementById("h1");
-        h1.textContent = `ITIS3135 ${dividerInput.value} ${firstNameInput.value} ${lastNameInput.value}'s ${dividerInput.value} ${mascotFirstName.value} ${mascotLastName.value}`;
-
-        // Replace all '|' characters in navs with the chosen divider
-        const dividerSpans = document.querySelectorAll(".divider-span");
-        dividerSpans.forEach((span) => {
-            span.textContent = dividerInput.value;
-        });
-
         // Insert quote and attribution
         const quote = document.getElementById("quote");
         const quoteBy = document.getElementById("quote-author");
@@ -246,4 +239,6 @@ fillOutAgainBtn.addEventListener("click", () => {
     formSection.hidden = false;
     introduction.hidden = true;
     fillOutAgainBtn.hidden = true;
+    generateHTMLSection.hidden = true;
+    generateJSONSection.hidden = true;
 });

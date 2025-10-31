@@ -8,6 +8,10 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <!-- Polyfill for older browsers -->
     <script src="https://cdn.jsdelivr.net/npm/@chenfengyuan/datepicker"></script>
+    <!-- Highlight.js CSS theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-dark.min.css">
+    <!-- Highlight.js JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
     <link rel="stylesheet" href="styles/default.css">
 </head>
 
@@ -18,6 +22,7 @@
     <main>
         <section id="introduction" hidden>
             <h2>Introduction Form</h2>
+            <h3>ITIS3135 | Josiah Blanding's | Jagged Bat</h3>
             <figure>
                 <img src="images/pictureofme.jpg" alt="Picture of me in front of a CyberTruck" id="intro-image">
                 <figcaption id="intro-image-caption">August, 2024</figcaption>
@@ -54,7 +59,6 @@
                 <cite>- A Genius</cite>
             </blockquote>
         </section>
-        <button id="fill-out-again" hidden>Fill Out The Form Again</button>
         <section id="form-section">
             <h2>Introduction Form</h2>
             <form id="form">
@@ -196,17 +200,34 @@
                 </label>
                 <div id="buttons">
                     <button id="clear-btn" type="button">Clear</button>
+                    <button id="generate-html-btn" type="button">Generate HTML</button>
                     <button id="submit-btn" type="submit">Submit</button>
+                    <button id="generate-json-btn" type="button">Generate JSON</button>
                     <button id="reset-btn" type="button">Reset</button>
                 </div>
             </form>
         </section>
+        <section id="generate-html-section" hidden>
+            <h2>Introduction HTML</h2>
+            <pre><code id="generate-html-container" class="html">
+            </code>
+            </pre>
+        </section>
+        <section id="generate-json-section" hidden>
+            <h2>Introduction JSON</h2>
+            <pre><code id="generate-json-container" class="json">
+            </code>
+            </pre>
+        </section>
+        <button id="fill-out-again" hidden>Fill Out The Form Again</button>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
     <script src="scripts/HTMLInclude.js"></script>
     <script src="scripts/introduction.js"></script>
+    <script src="scripts/generate_html.js"></script>
+    <script src="scripts/generate_json.js"></script>
 </body>
 
 </html>
