@@ -325,6 +325,21 @@
            /* no horizontal scroll */
        }
 
+       iframe {
+           border: 0;
+       }
+
+       h4 {
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           color: #BAA898;
+           /* matches header/footer text tone */
+           margin-top: 2em;
+           margin-bottom: 0.5em;
+           font-weight: bold;
+           font-size: 1.3rem;
+       }
+
+
 
 
 
@@ -405,4 +420,3 @@
                font-size: 1.6rem;
            }
        }
-       
