@@ -215,83 +215,75 @@ h3 {
     transform: scale(1.05);
 }
 
-/* Tablet (<=1024px) */
+/* -----------------------------
+   Responsive Media Queries
+----------------------------- */
+
+/* Tablets / small desktops */
 @media (max-width: 1024px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 15px 20px;
-    }
-
-    #primary-nav {
-        position: static;
-        transform: none;
-        margin-top: 10px;
-    }
-
-    #primary-nav ul {
+    #top-half {
+        flex-direction: column; /* stack text and image vertically */
+        justify-content: center;
+        align-items: center;
         gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
+        height: auto; /* allow hero to grow with content */
     }
 
-    #secondary-nav ul {
-        justify-content: center;
-    }
-
-    h1 {
-        font-size: 1.8rem;
+    #top-half > div {
+        max-width: 80%;
         text-align: center;
+    }
+
+    #top-half h2 {
+        font-size: 2.5rem;
+    }
+
+    #top-half p {
+        font-size: 1.3rem;
+    }
+
+    .cropped-image {
+        width: 90%; /* narrower for mobile readability */
+        height: auto;
+    }
+
+    button {
+        width: 180px;
+        height: 45px;
     }
 }
 
-/* Hero section responsive */
-@media (max-width: 768px) {
+/* Small mobile devices */
+@media (max-width: 480px) {
     #top-half {
-        flex-direction: column; /* stack image and text vertically */
-        justify-content: center;
-        align-items: center;
-        height: auto; /* let it grow with content */
-        gap: 20px; /* space between image and text */
+        gap: 20px;
         padding: 20px;
     }
 
     #top-half > div {
-        max-width: 90%; /* text container width */
-        text-align: center; /* center text for mobile */
-    }
-
-    .cropped-image {
-        width: 100%; /* full width */
-        height: auto; /* maintain aspect ratio */
+        max-width: 95%;
     }
 
     #top-half h2 {
-        font-size: 2rem; /* scale down */
+        font-size: 2rem; /* bigger than before for readability */
     }
 
     #top-half p {
         font-size: 1.1rem;
     }
 
+    .cropped-image {
+        width: 100%; /* image fills width but keeps aspect ratio */
+        height: auto;
+    }
+
     button {
-        width: 180px; /* slightly smaller button */
-        height: 45px;
-    }
-}
-
-
-/* Small mobile (<=480px) */
-@media (max-width: 480px) {
-    header {
-        padding: 10px 10px;
+        width: 160px;
+        height: 40px;
     }
 
-    h1 {
-        font-size: 1.4rem;
-    }
-
-    body {
-        font-size: 0.9rem;
-    }
+    /* Optional: move image above text */
+    /* #top-half {
+        flex-direction: column-reverse;
+    } */
 }
