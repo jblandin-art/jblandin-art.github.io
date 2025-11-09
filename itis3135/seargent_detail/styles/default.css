@@ -216,74 +216,163 @@ h3 {
 }
 
 /* -----------------------------
-   Responsive Media Queries
+   Hero Section - Mobile First
 ----------------------------- */
 
-/* Tablets / small desktops */
-@media (max-width: 1024px) {
-    #top-half {
-        flex-direction: column; /* stack text and image vertically */
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        height: auto; /* allow hero to grow with content */
-    }
+/* Base hero (mobile first) */
+#top-half {
+    display: flex;
+    flex-direction: column; /* stack text above image */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    background-color: #3a4a3a;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+}
 
-    #top-half > div {
-        max-width: 80%;
-        text-align: center;
-    }
+/* Hero text container */
+#top-half > div {
+    max-width: 90%;
+    z-index: 2; /* keep text above image */
+}
+
+/* Headline */
+#top-half h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #d4af37;
+    text-shadow: 1px 1px 3px #000;
+    margin-bottom: 15px;
+}
+
+/* Paragraph */
+#top-half p {
+    font-size: 1.3rem;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Button */
+.btn {
+    width: 160px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+/* Hero image */
+.cropped-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Tablets and small desktops */
+@media (min-width: 481px) and (max-width: 1024px) {
+    #top-half {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    color: #f0f0f0;
+
+    background: url('https://www.detailedimage.com/photos/guide_home_image.jpg') center/cover no-repeat;
+}
+
+/* Dark green overlay with warmth & contrast adjustments */
+#top-half::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* Step 1: color overlay for contrast */
+    background-color: rgba(35, 50, 35, 0.5); /* deep green tint */
+
+    /* Step 2: filters apply only to overlay (NOT text) */
+    filter: brightness(0.6) contrast(1.2) sepia(0.25);
+
+    z-index: 0;
+}
+
+/* Make sure text and button stay above the overlay */
+#top-half > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+.cropped-image {
+    display: none; /* hide the extra img to prevent doubling */
+}
+
 
     #top-half h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     #top-half p {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
-    .cropped-image {
-        width: 90%; /* narrower for mobile readability */
-        height: auto;
-    }
 
-    button {
+
+    .btn {
         width: 180px;
-        height: 45px;
+        height: 50px;
+        font-size: 1.1rem;
     }
 }
 
-/* Small mobile devices */
-@media (max-width: 480px) {
+/* Large screens - preserve original hero layout */
+@media (min-width: 1025px) {
     #top-half {
-        gap: 20px;
-        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding: 40px;
+        gap: 40px;
     }
 
     #top-half > div {
-        max-width: 95%;
+        max-width: 600px;
+        text-align: left;
     }
 
     #top-half h2 {
-        font-size: 2rem; /* bigger than before for readability */
+        font-size: 3rem;
     }
 
     #top-half p {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .cropped-image {
-        width: 100%; /* image fills width but keeps aspect ratio */
-        height: auto;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 
-    button {
-        width: 160px;
-        height: 40px;
+    .btn {
+        width: 200px;
+        height: 50px;
+        font-size: 1.1rem;
     }
-
-    /* Optional: move image above text */
-    /* #top-half {
-        flex-direction: column-reverse;
-    } */
 }
