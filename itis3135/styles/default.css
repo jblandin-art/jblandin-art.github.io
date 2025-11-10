@@ -32,21 +32,24 @@
 
        a {
            color: brown;
-           margin: 0 15px;
+           margin: 0 8px;
            text-decoration: none;
        }
 
+       nav {
+        margin: 8px 0px;
+       }
+
        .secondary-nav {
-           font-size: 0.85rem;
            color: #999;
            text-align: center;
+           
        }
 
        .secondary-nav a {
            color: #777;
            text-decoration: none;
-           margin: 0 10px;
-           font-style: italic;
+           margin: 0 5px;
        }
 
        .secondary-nav a:hover {
@@ -62,7 +65,7 @@
 
        h2 {
            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-           margin: 20px;
+           margin: 20px 0;
        }
 
        footer p {
@@ -75,8 +78,6 @@
        }
 
        .designed-by {
-           font-size: 0.8rem;
-           color: #666;
            margin: 5px 0 0 0;
        }
 
