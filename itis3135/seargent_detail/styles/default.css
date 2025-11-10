@@ -3,16 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
 }
+
 *::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Edge */
+    display: none;
+    /* Chrome, Safari, Edge */
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1f1f1f; /* dark background for contrast */
+    background-color: #1f1f1f;
+    /* dark background for contrast */
     color: #f0f0f0;
 }
 
@@ -22,21 +27,26 @@ header {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    background-color: #2e3b2e; /* military green */
+    background-color: #2e3b2e;
+    /* military green */
     padding: 10px 50px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-    height: 70px; /* slightly taller for balance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    height: 70px;
+    /* slightly taller for balance */
 }
 
 /* Rugged, military-style site title */
 h1 {
-    font-family: 'Stencil Std', 'Impact', sans-serif; /* bold, military feel */
+    font-family: 'Stencil Std', 'Impact', sans-serif;
+    /* bold, military feel */
     font-size: 2rem;
     font-weight: 900;
-    color: #d4af37; /* gold accent for pop */
+    color: #d4af37;
+    /* gold accent for pop */
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 3px #000; /* rough, rugged effect */
+    text-shadow: 2px 2px 3px #000;
+    /* rough, rugged effect */
     margin: 0;
 }
 
@@ -50,7 +60,8 @@ h1 {
 #primary-nav ul {
     display: flex;
     gap: 50px;
-    font-family: 'Arial Black', sans-serif; /* stronger, blocky nav text */
+    font-family: 'Arial Black', sans-serif;
+    /* stronger, blocky nav text */
 }
 
 header nav {
@@ -66,40 +77,50 @@ header nav ul {
 
 header nav ul li a {
     text-decoration: none;
-    color: #f0f0f0; /* lighter, readable against green */
+    color: #f0f0f0;
+    /* lighter, readable against green */
     font-weight: bold;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 header nav ul li a:hover {
-    color: #d4af37; /* gold accent on hover */
-    text-shadow: 1px 1px 2px #000; /* subtle pop on hover */
+    color: #d4af37;
+    /* gold accent on hover */
+    text-shadow: 1px 1px 2px #000;
+    /* subtle pop on hover */
 }
 
 /* Homepage secondary nav - match services page */
 header nav:last-of-type ul {
     display: flex;
     align-items: center;
-    gap: 10px;             /* spacing between items */
-    font-size: 0.85rem;    /* smaller font than primary nav */
-    color: #cfcfcf;        /* subtle text color */
-    list-style: none;       /* remove bullets */
+    gap: 10px;
+    /* spacing between items */
+    font-size: 0.85rem;
+    /* smaller font than primary nav */
+    color: #cfcfcf;
+    /* subtle text color */
+    list-style: none;
+    /* remove bullets */
 }
 
 header nav:last-of-type ul li.separator {
-    color: #cfcfcf;        /* same subtle color for separator */
+    color: #cfcfcf;
+    /* same subtle color for separator */
     font-weight: bold;
 }
 
 header nav:last-of-type ul li a {
     text-decoration: none;
-    color: #cfcfcf;        /* subtle color for links */
+    color: #cfcfcf;
+    /* subtle color for links */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 header nav:last-of-type ul li a:hover {
-    color: #d4af37;        /* gold accent on hover */
+    color: #d4af37;
+    /* gold accent on hover */
 }
 
 
@@ -113,12 +134,13 @@ header nav:last-of-type ul li a:hover {
     padding: 40px;
     width: 100%;
     height: 100vh;
-    background-color: #3a4a3a; /* olive backdrop for hero */
+    background-color: #3a4a3a;
+    /* olive backdrop for hero */
     box-sizing: border-box;
     gap: 40px;
 }
 
-#top-half > div {
+#top-half>div {
     width: 1000px;
 }
 
@@ -126,8 +148,10 @@ header nav:last-of-type ul li a:hover {
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-    color: #d4af37; /* gold highlight for military pop */
-    text-shadow: 1px 1px 3px #000; /* subtle shadow for contrast */
+    color: #d4af37;
+    /* gold highlight for military pop */
+    text-shadow: 1px 1px 3px #000;
+    /* subtle shadow for contrast */
 }
 
 #top-half p {
@@ -142,7 +166,7 @@ header nav:last-of-type ul li a:hover {
     height: 80%;
     object-fit: cover;
     object-position: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 /* Bottom section (gallery or finishings) */
@@ -151,7 +175,8 @@ header nav:last-of-type ul li a:hover {
     justify-content: center;
     align-items: center;
     padding: 60px 0;
-    background-color: #2e3b2e; /* matching header */
+    background-color: #2e3b2e;
+    /* matching header */
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -162,7 +187,7 @@ header nav:last-of-type ul li a:hover {
     object-fit: cover;
     object-position: center;
     border: 2px solid #d4af37;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s;
 }
 
@@ -193,7 +218,8 @@ h3 {
     color: #1f1f1f;
     letter-spacing: 7px;
     text-align: center;
-    line-height: 70px; /* vertically centers text */
+    line-height: 70px;
+    /* vertically centers text */
     text-decoration: none;
     transition: transform 0.2s, background-color 0.3s;
     font-size: 1.3rem;
@@ -207,47 +233,49 @@ h3 {
 /* Tablets and small desktops */
 @media (min-width: 481px) and (max-width: 1024px) {
     #top-half {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px;
-    color: #f0f0f0;
+        position: relative;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        color: #f0f0f0;
 
-    background: url('https://www.detailedimage.com/photos/guide_home_image.jpg') center/cover no-repeat;
-}
+        background: url('https://www.detailedimage.com/photos/guide_home_image.jpg') center/cover no-repeat;
+    }
 
-/* Dark green overlay with warmth & contrast adjustments */
-#top-half::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /* Dark green overlay with warmth & contrast adjustments */
+    #top-half::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-    /* Step 1: color overlay for contrast */
-    background-color: rgba(35, 50, 35, 0.5); /* deep green tint */
+        /* Step 1: color overlay for contrast */
+        background-color: rgba(35, 50, 35, 0.5);
+        /* deep green tint */
 
-    /* Step 2: filters apply only to overlay (NOT text) */
-    filter: brightness(0.6) contrast(1.2) sepia(0.25);
+        /* Step 2: filters apply only to overlay (NOT text) */
+        filter: brightness(0.6) contrast(1.2) sepia(0.25);
 
-    z-index: 0;
-}
+        z-index: 0;
+    }
 
-/* Make sure text and button stay above the overlay */
-#top-half > * {
-    position: relative;
-    z-index: 1;
-}
+    /* Make sure text and button stay above the overlay */
+    #top-half>* {
+        position: relative;
+        z-index: 1;
+    }
 
 
-.cropped-image {
-    display: none; /* hide the extra img to prevent doubling */
-}
+    .cropped-image {
+        display: none;
+        /* hide the extra img to prevent doubling */
+    }
 
 
     #top-half h2 {
@@ -264,6 +292,7 @@ h3 {
         width: 180px;
         height: 50px;
         font-size: 1.1rem;
+        line-height: 50px;
+        letter-spacing: normal;
     }
 }
-
