@@ -32,6 +32,12 @@
            text-align: center;
        }
 
+            .divider {
+        margin: 0 0.4em;
+        color: inherit;
+        }
+
+
        a {
            color: brown;
            margin: 0 8px;
