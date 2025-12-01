@@ -230,6 +230,37 @@ h3 {
     transform: scale(1.05);
 }
 
+.hero {
+  display: inline-block;  /* shrink to fit image exactly */
+  position: relative;
+  width: 100%;    /* or 100% for responsive */
+  height: 500px;   /* MUST set explicit height for child 100% to work */
+}
+
+.cropped-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;         /* remove inline spacing under image */
+    width: 100%;
+    height: 100%;            /* make it fill the container if needed */
+    object-fit: cover;
+    object-position: center;
+}
+
+.front {
+    z-index: 2;
+}
+.back {
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+
+
 /* Tablets and small desktops */
 @media (min-width: 481px) and (max-width: 1024px) {
     #top-half {

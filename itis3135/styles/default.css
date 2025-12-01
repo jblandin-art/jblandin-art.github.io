@@ -348,6 +348,11 @@
            font-size: 1.3rem;
        }
 
+       #nc-tech {
+        max-width: 90%;
+           width: 90vw;
+       }
+
 
 
 
