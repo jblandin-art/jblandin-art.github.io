@@ -1,4 +1,4 @@
-document.querySelectorAll('.read-more').forEach(btn => {
+document.querySelectorAll('.read-more').forEach((btn) => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.service-card');
     const fullDesc = card.querySelector('.full-desc');
